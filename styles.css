@@ -1,33 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: hsl(30, 38%, 92%);
-}
-
-.container {
-  background-color: hsl(0, 0%, 100%);
-  position: absolute;
-  width: 700px;
-  height: 550px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-}
-
-.col-right {
-  /* background-color: red; */
-  position: absolute;
-  top: 0;
-  left: 350px; /*could not figure this out */
-  padding: 45px;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  font-size: 14px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @font-face {
@@ -41,42 +24,68 @@ img {
   src: url(fonts/Fraunces-Bold.ttf);
 }
 
-.text1 {
-  font-size: 14px;
-  font-family: "Montserrat";
+.card {
+  width: 375px;
+  height: 70%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.image-sec {
+  height: 40%;
+}
+
+.image {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-sec {
+  padding: 30px;
+}
+
+.sub-title {
+  font-family: Montserrat;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
-  color: gray;
 }
 
 .title {
+  font-family: Fraunces;
+  font-weight: 700;
   font-size: 32px;
-  font-family: "Fraunces";
-  margin: 25px 0;
+  color: hsl(212, 21%, 14%);
 }
 
 .description {
-  font-size: 14px;
-  font-family: "Montserrat";
-  letter-spacing: 0.8px;
+  font-family: Montserrat;
   font-weight: 500;
-  color: gray;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: hsl(228, 12%, 48%);
+}
+
+.amount {
+  display: flex;
+  align-items: center;
 }
 
 .price {
-  font-size: 38px;
-  font-family: "Fraunces";
+  font-family: Fraunces;
   font-weight: 700;
+  font-size: 32px;
   color: hsl(158, 36%, 37%);
+  display: inline-block;
 }
 
-/* .old-price {
-  font-size: 14px;
-  font-family: "Montserrat";
-  color: gray;
+.old-price {
+  font-family: Montserrat;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
   text-decoration: line-through;
-} */
-
-.wrapper {
-  margin: 40px auto;
+  display: inline-block;
+  padding-left: 20px;
 }
