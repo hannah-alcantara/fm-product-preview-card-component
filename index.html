@@ -4,39 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Product preview card component</title>
   </head>
 
   <body>
     <div class="card">
-      <div class="image-sec">
-        <img
-          class="image"
-          src="/images/image-product-desktop.jpg"
-          alt="Gabrielle Essence Eau De Parfum"
-        />
-      </div>
-      <div class="text-sec">
-        <div class="sub-title">
-          <p>PERFUME</p>
+      <img
+        class="image"
+        src="/images/image-product-desktop.jpg"
+        alt="Gabrielle Essence Eau De Parfum"
+      />
+      <div class="info">
+        <div class="title u-padding-bottom">
+          <p>Perfume</p>
         </div>
-        <div class="title">
-          <p>Gabrielle Essence Eau De Parfum</p>
-        </div>
-        <div class="description">
+        <h1 class="name u-padding-bottom">Gabrielle Essence Eau De Parfum</h1>
+        <div class="description u-padding-bottom">
           <p>
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
         </div>
-        <div class="amount">
-          <div class="price">
+        <div class="price u-padding-bottom">
+          <div class="new-price">
             <p>$149.99</p>
           </div>
           <div class="old-price">
             <p>$169.99</p>
           </div>
         </div>
+        <a href="#" class="button"
+          ><img src="images/icon-cart.svg" alt="cart icon" class="icon" />Add to
+          cart</a
+        >
       </div>
     </div>
   </body>

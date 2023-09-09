@@ -7,85 +7,120 @@
 body {
   background-color: hsl(30, 38%, 92%);
   font-size: 14px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url(fonts/Montserrat-Bold.ttf);
-  src: url(fonts/Montserrat-Medium.ttf);
-}
-
-@font-face {
-  font-family: Fraunces;
-  src: url(fonts/Fraunces-Bold.ttf);
+  font-family: "Montserrat", sans-serif;
 }
 
 .card {
-  width: 375px;
-  height: 70%;
+  display: flex;
+  flex-direction: row;
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
 }
 
-.image-sec {
-  height: 40%;
-}
-
 .image {
-  border-radius: 10px 10px 0 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 0 0 10px;
 }
 
-.text-sec {
-  padding: 30px;
+.info {
+  padding: 40px;
+  max-width: 325px;
 }
 
-.sub-title {
-  font-family: Montserrat;
-  font-weight: 500;
+.title {
+  text-transform: uppercase;
   color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
 }
 
-.title {
+h1 {
   font-family: Fraunces;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 35px;
   color: hsl(212, 21%, 14%);
+  line-height: 35px;
 }
 
 .description {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.6;
+  line-height: 25px;
   color: hsl(228, 12%, 48%);
 }
 
-.amount {
+.price {
   display: flex;
   align-items: center;
 }
 
-.price {
+.new-price {
   font-family: Fraunces;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 35px;
   color: hsl(158, 36%, 37%);
-  display: inline-block;
 }
 
 .old-price {
-  font-family: Montserrat;
-  font-weight: 500;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
-  display: inline-block;
   padding-left: 20px;
 }
+
+.button {
+  background-color: hsl(158, 36%, 37%);
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Montserrat;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: hsl(221, 100%, 96%) 7px 7px 20px;
+}
+.button:hover {
+  transition: all 0.2s;
+  transform: translateY(-2px);
+  background-color: hsl(156.3, 42.2%, 17.6%);
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.u-padding-bottom {
+  padding-bottom: 25px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    max-width: 100%;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .info {
+    padding: 30px;
+  }
+  .old-price {
+    padding-left: 15px;
+  }
+  .u-padding-bottom {
+    padding-bottom: 12px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */
