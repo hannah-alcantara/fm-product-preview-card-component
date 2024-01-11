@@ -14,7 +14,7 @@ Users should be able to:
 ### 💻 Screenshot
 
 ![Desktop](/images/desktop-screenshot.PNG)
-![Desktop](/images/mobile-screenshot.PNG)
+![Mobile](/images/mobile-screenshot.PNG)
 
 ### 🔗 Links
 
