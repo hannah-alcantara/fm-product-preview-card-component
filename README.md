@@ -18,8 +18,8 @@ Users should be able to:
 
 ### 🔗 Links
 
-- Solution URL: https://github.com/hannah-alcantara/fm-product-preview-card-component
-- Live Site URL: https://hannah-alcantara.github.io/fm-product-preview-card-component
+- [Solution URL](https://github.com/hannah-alcantara/fm-product-preview-card-component)
+- [Live Site URL](https://hannah-alcantara.github.io/fm-product-preview-card-component)
 
 ### 🛠️ Built with
 
